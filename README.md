@@ -1,3 +1,3 @@
 # Spotify-SQL-Project
 
-![Spotify Logo]()
+![Spotify Logo](https://github.com/GT-Creat0r/Spotify-SQL-Project/blob/main/Spotify-logo.jpg)
