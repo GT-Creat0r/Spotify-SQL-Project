@@ -26,7 +26,7 @@ CREATE TABLE spotify(
 	stream	BIGINT,
 	energyLiveness	FLOAT,
 	most_playedon VARCHAR(50)
-)
+);
 
 
 --EDA (Exploratory Data Analysis)
@@ -203,3 +203,4 @@ SELECT track,
 		SUM(likes) OVER(ORDER BY views DESC) as cumulative_likes
 FROM spotify
 ORDER BY views DESC;   -- cleaner and readable output (Output rows are shown in the same order that cumulative sum is calculated)
+
