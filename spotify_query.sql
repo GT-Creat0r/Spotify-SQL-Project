@@ -204,3 +204,18 @@ SELECT track,
 FROM spotify
 ORDER BY views DESC;   -- cleaner and readable output (Output rows are shown in the same order that cumulative sum is calculated)
 
+--Query Optimization
+EXPLAIN ANALYZE --ET:11.507 PT:0.4
+SELECT 
+	artist,
+	track,
+	views
+FROM spotify
+WHERE artist='Gorillaz'
+	AND most_playedon='Youtube'
+ORDER BY stream DESC
+LIMIT 25;
+
+CREATE INDEX artist_index ON spotify(artist); --Indexing
+
+DROP INDEX artist_index;
